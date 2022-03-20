@@ -1,7 +1,12 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main(){
+//   *   *
+//  * * * *
+// *   *   *
+
+int main()
+{
     int n;
     cin >> n;
 
@@ -9,18 +14,21 @@ int main(){
     {
         for (int j = 1; j <= n; j++)
         {
-            if((i + j)%4 == 0){
+            if ((i + j) % 4 == 0)
+            {
                 cout << '*';
-            } else if(i == 2 && j%4 == 0){
+            }
+            else if (i == 2 && j % 4 == 0)
+            {
                 cout << '*';
-            }else{
+            }
+            else
+            {
                 cout << ' ';
             }
-            
         }
-        cout << endl;        
-    
+        cout << endl;
     }
-    
-        return 0;
+
+    return 0;
 }
